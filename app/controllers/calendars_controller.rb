@@ -15,7 +15,7 @@ class CalendarsController < ApplicationController
   private
 
   def plan_params
-    params.permit(:date, :plan,:calendars)
+    params.require(:plan)
   end
 
   def get_week
